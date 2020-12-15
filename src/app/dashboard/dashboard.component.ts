@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,5 +17,4 @@ export class DashboardComponent implements OnInit {
       duration: 1200,
     });
   }
-
 }

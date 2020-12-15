@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -8,9 +8,31 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
+  selectedTab = "Tab1";
+
+  makeActive(tab: string) {
+    this.selectedTab = tab;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toHome(){
+    document.getElementById("banner").scrollIntoView({behavior:"smooth"});
+  }
+  toFeatures(){
+    document.getElementById("feature").scrollIntoView({behavior:"smooth"})
+  }
+  toService(){
+    document.getElementById("service").scrollIntoView({behavior:"smooth"})
+  }
+  toTestimonial(){
+    document.getElementById("testimonial").scrollIntoView({behavior:"smooth"})
+  }
+  toContact(){
+    document.getElementById("footer").scrollIntoView({behavior:"smooth"})
   }
 
 }

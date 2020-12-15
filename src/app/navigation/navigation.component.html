@@ -8,11 +8,11 @@
     <div class="sidebar">
         <header>LADIES WORLD</header>
         <ul>
-            <li><a href="#banner"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#feature"><i class="fas fa-qrcode"></i>Features</a></li>
-            <li><a href="#service"><i class="fas fa-link"></i>Services</a></li>
-            <li><a href="#testimonial"><i class="fa fa-users"></i>Testimonial</a></li>
-            <li><a href="#footer"><i class="fa fa-phone"></i>Contact Us</a></li>
+            <li><a (click)="toHome()" routerLinkActive="active"><i class="fa fa-home"></i>Home</a></li>
+            <li><a (click)="toFeatures()" routerLinkActive="active"><i class="fas fa-qrcode"></i>Features</a></li>
+            <li><a (click)="toService()" routerLinkActive="active"><i class="fas fa-link"></i>Services</a></li>
+            <li><a (click)="toTestimonial()" routerLinkActive="active"><i class="fa fa-users"></i>Testimonial</a></li>
+            <li><a (click)="toContact()" routerLinkActive="active"><i class="fa fa-phone"></i>Contact Us</a></li>
             <li><a href="https://www.google.com/maps/place/Ladies+World+Tailors/@9.8948766,78.1199914,21z/data=!4m5!3m4!1s0x0:0x32f05842e8170525!8m2!3d9.8947924!4d78.1200373"><i class="fa fa-map-marker"></i>Find Location</a></li>
         </ul>
     </div>
