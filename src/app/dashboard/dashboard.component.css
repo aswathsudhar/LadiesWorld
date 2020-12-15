@@ -5,8 +5,7 @@
 }
 
 #banner {
-    /* background-color:  */
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5), #009688), url("/assets/allinone.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), #009688), url("/assets/allinone.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -373,13 +372,28 @@ hr {
 
 .footer-right,
 .footer-left {
-    flex-basis: 45%;
+    flex-basis: 36%;
     padding: 10px;
     margin-bottom: 20px;
+    transition: .5s;
+    transition: tranform .5s;
+}
+
+.footer-left:hover {
+    transform: translateY(-10px);
 }
 
 .footer-right {
     text-align: right;
+    border-radius: 17px 0;
+    background: white;
+    box-shadow: 5px 2px 11px #439788;
+}
+
+.footer-left {
+    border-radius: 0 17px;
+    background: white;
+    box-shadow: 5px 2px 11px #439788;
 }
 
 .footer-row h1 {
@@ -398,11 +412,11 @@ hr {
 }
 
 .footer-img {
-    max-width: 370px;
+    max-width: 280px;
     opacity: 0.1;
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 19%;
     transform: translate(-50%, -50%);
 }
 
@@ -438,9 +452,9 @@ hr {
     .footer-left,
     .footer-right {
         flex-basis: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
     .footer-img {
-        top: 25%;
+        top: 14%;
     }
 }
