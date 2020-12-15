@@ -5,7 +5,8 @@
 }
 
 #banner {
-    background: linear-gradient(rgb(0, 0, 0, 0.5), #009688), url(/assets/allinone.jpg);
+    /* background-color:  */
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), #009688), url("/assets/allinone.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
