@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ladiesworld"
+    }
+  },
+  "defaultProject": "ladiesworld",
+  "cli": {
+    "analytics": false
+  }
 }
