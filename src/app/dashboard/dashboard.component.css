@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #banner {
@@ -464,13 +465,6 @@ hr {
 
 /*------------------------------------CUSTOMER_POP-UP-----------------------*/
 
-* {
-    box-sizing: border-box;
-}
-
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-
 .open-button {
     background-color: transparent;
     color: #009688;
@@ -486,9 +480,6 @@ hr {
     z-index: 1;
 }
 
-
-/* The popup form - hidden by default */
-
 .form-popup {
     display: none;
     position: fixed;
@@ -500,17 +491,11 @@ hr {
     box-shadow: 0px 0px 13px 1px #54b8a3;
 }
 
-
-/* Add styles to the form container */
-
 .form-container {
     max-width: 500px;
     padding: 10px;
     background-color: white;
 }
-
-
-/* Full-width input fields */
 
 .form-container input[type=text] {
     width: 100%;
@@ -520,16 +505,10 @@ hr {
     background: #f1f1f1;
 }
 
-
-/* When the inputs get focus, do something */
-
 .form-container input[type=text]:focus {
     background-color: #ddd;
     outline: none;
 }
-
-
-/* Set a style for the submit/login button */
 
 .form-container .btn {
     background-color: #18a78d;
@@ -541,9 +520,6 @@ hr {
     margin-bottom: 10px;
     opacity: 0.8;
 }
-
-
-/* Add some hover effects to buttons */
 
 .form-container .btn:hover,
 .open-button:hover {
