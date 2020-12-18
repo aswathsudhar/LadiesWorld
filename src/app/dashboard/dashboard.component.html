@@ -6,10 +6,35 @@
         <p data-aos="fade-down">We're In Now Your Hand</p>
         <div class="banner-btn">
             <a href="https://www.google.com/maps/place/Ladies+World+Tailors/@9.8948766,78.1199914,21z/data=!4m5!3m4!1s0x0:0x32f05842e8170525!8m2!3d9.8947924!4d78.1200373"><span></span>Find Location</a>
-            <a href="#"><span></span>Customer Details</a>
         </div>
     </div>
 </section>
+
+<!---------------------------------POP-UP--------------------------------->
+
+
+<img id="fb_msg_icon" class="open-button" width="10%" height="10%" (click)="openForm()" src="assets/logo.png">
+
+<div class="form-popup" id="myForm">
+    <form [formGroup]="CustomerForm" class="form-container" ngNativeValidate>
+        <h3 style="text-align: center;">Submit Your Details <span id="CloseBtn"><i class="fa fa-window-close" (click)="closeForm()"></i></span></h3>
+
+        <label for="name"><b>Name</b></label>
+        <!-- <input type="text" placeholder="Enter name" name="name" required> -->
+        <input type="text" formControlName="names" name="names" required/>
+
+        <label for="name"><b>Mobile Number</b></label>
+        <input type="text" formControlName="number" (keypress)="numberOnly($event)" maxlength="10" required/>
+
+        <label for="name"><b>Address</b></label>
+        <input type="text" formControlName="address" required/>
+
+        <label for="name"><b>Comments</b></label>
+        <input type="text" formControlName="comments" required/>
+
+        <input type="submit" class="btn" (click)="Submit()" />
+    </form>
+</div>
 
 <!------------------------------------FEATURES--------------------------------->
 

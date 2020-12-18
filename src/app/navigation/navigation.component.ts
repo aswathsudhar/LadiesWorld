@@ -8,12 +8,6 @@ import { Component, ElementRef, OnInit, ViewEncapsulation } from '@angular/core'
 })
 export class NavigationComponent implements OnInit {
 
-  selectedTab = "Tab1";
-
-  makeActive(tab: string) {
-    this.selectedTab = tab;
-  }
-
   constructor() { }
 
   ngOnInit(): void {

@@ -71,9 +71,9 @@ label #btn {
     z-index: 1;
     left: 10px;
     top: 25px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
-    padding: 2px 15px;
+    padding: 2px 11px;
     transition: all .3s;
     box-shadow: 3px 6px 5px #2d2d2d;
 }
@@ -97,6 +97,10 @@ label #cancel {
     left: 250px;
     opacity: 0;
     pointer-events: none;
+}
+
+#check:checked~label .sidebar ul a {
+    left: 195px;
 }
 
 #check:checked~label #cancel {
