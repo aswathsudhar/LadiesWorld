@@ -17,3 +17,30 @@
         </ul>
     </div>
 </div>
+
+
+<!---------------------------------POP-UP--------------------------------->
+
+
+<img id="fb_msg_icon" class="open-button" width="10%" height="10%" (click)="openForm()" src="assets/logo.png">
+
+<div class="form-popup" id="myForm">
+    <form [formGroup]="CustomerForm" class="form-container" ngNativeValidate>
+        <h3 style="text-align: center;">Submit Your Details <span id="CloseBtn"><i class="fa fa-window-close" (click)="closeForm()"></i></span></h3>
+
+        <label for="name"><b>Name</b></label>
+        <!-- <input type="text" placeholder="Enter name" name="name" required> -->
+        <input type="text" formControlName="names" name="names" required/>
+
+        <label for="name"><b>Mobile Number</b></label>
+        <input type="text" formControlName="number" (keypress)="numberOnly($event)" maxlength="10" required/>
+
+        <label for="name"><b>Address</b></label>
+        <input type="text" formControlName="address" required/>
+
+        <label for="name"><b>Comments</b></label>
+        <input type="text" formControlName="comments" required/>
+
+        <input type="submit" class="btn" (click)="Submit()" />
+    </form>
+</div>
