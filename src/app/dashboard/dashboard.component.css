@@ -5,7 +5,7 @@
 }
 
 #banner {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.5), #009688), url('../../assets/allinone.jpg');
+    background-image: linear-gradient(rgb(0, 0, 0, 0.5), #ed1165), url('../../assets/allinone.jpg');
     background-size: cover;
     background-position: center;
     height: 88vh;
@@ -103,7 +103,7 @@
 .title-text p {
     margin: auto;
     font-size: 20px;
-    color: #009688;
+    color: #ed1165;
     font-weight: bold;
     position: relative;
     z-index: 0;
@@ -114,7 +114,7 @@
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(#019587, #fff);
+    background: linear-gradient(#ed1165, #fff);
     position: absolute;
     top: -20px;
     left: 0;
@@ -155,7 +155,7 @@
     text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #009688;
+    color: #ed1165;
     font-size: 1.5rem;
 }
 
@@ -171,8 +171,8 @@
     font-size: 30px;
     line-height: 50px;
     border-radius: 8px;
-    color: #009688;
-    border: 1px solid #009688;
+    color: #ed1165;
+    border: 1px solid #ed1165;
 }
 
 .feature-text p {
@@ -314,7 +314,7 @@ hr {
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #00968814;
+    box-shadow: 0 10px 20px 3px #ed1165 14;
     cursor: pointer;
     transition: transform .5s;
 }
@@ -342,7 +342,7 @@ hr {
 }
 
 .user-info small {
-    color: #009688;
+    color: #ed1165;
 }
 
 .testimonial-col:hover {
@@ -389,13 +389,13 @@ hr {
     text-align: right;
     border-radius: 17px 0;
     background: white;
-    box-shadow: 5px 2px 11px #439788;
+    box-shadow: 5px 2px 11px #ed1165;
 }
 
 .footer-left {
     border-radius: 0 17px;
     background: white;
-    box-shadow: 5px 2px 11px #439788;
+    box-shadow: 5px 2px 11px #ed1165;
 }
 
 .footer-row h1 {
@@ -409,7 +409,7 @@ hr {
 .footer-right .fa,
 .footer-left .fa {
     font-size: 20px;
-    color: #009688;
+    color: #ed1165;
     margin: 10px;
 }
 
@@ -431,16 +431,16 @@ hr {
     width: 40px;
     font-size: 20px;
     line-height: 40px;
-    border: 1px solid #009688;
+    border: 1px solid #ed1165;
     border-radius: 10px 0px;
     margin: 40px 5px 0;
-    color: #009688;
+    color: #ed1165;
     cursor: pointer;
     transition: .5s;
 }
 
 .social-links .fa:hover {
-    background: #009688;
+    background: #ed1165;
     color: #fff;
     transform: translateY(-7px);
 }
